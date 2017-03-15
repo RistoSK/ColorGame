@@ -16,6 +16,7 @@ function init()
     setupBoxxes();
     reset();
 }
+
 // Toggle the selected effect from the buttons
 function setupModeButtons()
 {
