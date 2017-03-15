@@ -16,7 +16,7 @@ function init()
     setupBoxxes();
     reset();
 }
-
+// Toggle the selected effect from the buttons
 function setupModeButtons()
 {
     for(var i=0; i < modeButtons.length; i++)
@@ -26,7 +26,7 @@ function setupModeButtons()
                 modeButtons[0].classList.remove("selected");
                 modeButtons[1].classList.remove("selected");
                 this.classList.add("selected");
-            
+                //Make the two different skill levels
                 if(this.textContent === "Easy")
                 {
                     numOfBoxxes = 3;
@@ -39,7 +39,8 @@ function setupModeButtons()
             });
     }
 }
-    
+
+//make boxxes disapear when wrongly clicked
 function setupBoxxes()
 {
    for (var i = 0; i < boxs.length; i++)
